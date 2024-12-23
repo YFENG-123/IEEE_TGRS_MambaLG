@@ -6,7 +6,7 @@ ___________
 
 The code in this toolbox implements the Local-to-Global Mamba for Hyperspectral Image Classification. More specifically, it is detailed as follow.
 
-![alt text](./MambaLG.PNG)
+![alt text](.MambaLG.PNG)
 
 Citation
 ---------------------
