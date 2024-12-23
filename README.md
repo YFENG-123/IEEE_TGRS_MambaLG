@@ -1,10 +1,10 @@
-# Local-to-Global Mamba for Hyperspectral Image Classification
+# Hyperspectral Image Classification with Mamba
 
 Zhaojie Pan, Chenyu Li, Antonio Plaza, Jocelyn Chanussot, and [Danfeng Hong](https://sites.google.com/view/danfeng-hong)
 
 ___________
 
-The code in this toolbox implements the Local-to-Global Mamba for Hyperspectral Image Classification. More specifically, it is detailed as follow.
+The code in this toolbox implements the Hyperspectral Image Classification with Mamba. More specifically, it is detailed as follow.
 
 ![alt text](./MambaLG.png)
 
@@ -22,11 +22,11 @@ How to use it?
 ---------------------
 Here an example experiment is given by using **Indian Pines hyperspectral data**. Directly run **main.py** functions with different network parameter settings to produce the results. Please note that due to the randomness of the parameter initialization, the experimental results might have slightly different from those reported in the paper.
 
-When executing **main.py**, please take note of the `flag` on line 89 and the `dis` on line 92. When `dis` is set to `True`, the numbers `1`, `2`, and `3` in the `flag` correspond to the **Indian Pines hyperspectral data**, **Pavia University**, and **Houston**, respectively. When `dis` is set to False, the number `1` in the `flag` indicates the **Salinas**.
+When executing **main.py**, please take note of the `flag` on line 87 and the `dis` on line 90. When `dis` is set to `True`, the numbers `1`, `2`, and `3` in the `flag` correspond to the **Indian Pines hyperspectral data**, **Pavia University**, and **Houston**, respectively. When `dis` is set to False, the number `1` in the `flag` indicates the **Salinas**.
 
 For other datasets, you can make your own settings in **generate_pic.py**.
 
-Please kindly be careful on assigning arguments such as `num_epochs` on line 116. 
+Please kindly be careful on assigning arguments such as `num_epochs` on line 114. 
 
 When the dataset is **Indian Pines hyperspectral data** & **Pavia University**, `num_epochs` is set to 1000 and when the dataset is **Houston** & **Salinas**, `num_epochs` is set to 500.
 
