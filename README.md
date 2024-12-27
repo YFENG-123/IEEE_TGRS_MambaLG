@@ -13,6 +13,15 @@ Citation
 
 **Please kindly cite the papers if this code is useful and helpful for your research.**
 
+Zhaojie Pan, Chenyu Li, Antonio Plaza, Jocelyn Chanussot, and Danfeng Hong. Hyperspectral Image Classification with Mamba, IEEE Transactions on Geoscience and Remote Sensing (TGRS), 2024, DOI: 10.1109/TGRS.2024.3521411.
+
+    @article{hong2022spectralformer,
+      title={Hyperspectral Image Classification with Mamba},
+      author={Pan, Zhaojie and Li, Chenyu and Plaza, Antonio and Chanussot, Jocelyn and Hong, Danfeng},
+      journal={IEEE Transactions on Geoscience and Remote Sensing}, 
+      year={2024},
+      note = {DOI: 10.1109/TGRS.2024.3521411}
+    }
     
 System-specific notes
 ---------------------
