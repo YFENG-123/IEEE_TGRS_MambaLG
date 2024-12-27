@@ -1,4 +1,4 @@
-# Hyperspectral Image Classification with Mamba (https://ieeexplore.ieee.org/document/10812905)
+# [Hyperspectral Image Classification with Mamba] (https://ieeexplore.ieee.org/document/10812905)
 
 Zhaojie Pan, Chenyu Li, Antonio Plaza, Jocelyn Chanussot, and [Danfeng Hong](https://sites.google.com/view/danfeng-hong)
 
