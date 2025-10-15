@@ -8,6 +8,19 @@ import mambaLG_IP
 from utils.generate_pic import sampling, load_dataset, generate_png, generate_iter
 import torch.nn as nn
 
+
+import os
+import time
+
+start = time.time()
+
+if not os.path.exists("./records/"):
+    os.makedirs("./records/")
+if not os.path.exists("./net"):
+    os.makedirs("./net")
+if not os.path.exists("./classification_maps/"):
+    os.makedirs("./classification_maps/")
+
 def model_structure(model):
     blank = ' '
     print('-' * 90)
@@ -201,8 +214,12 @@ for FLAG in flag:
                 ELEMENT_ACC[index_iter, :] = acc_per_class
 
             print("-------- Training Finished-----------")
+
             record.record_output(OA, AA, KAPPA, ELEMENT_ACC, TRAINING_TIME, TESTING_TIME,
                                  'records/' + day_str + '_' + str(FLAG) + "_SPEC_" + str(
                                      SPEC) + "_RATE_" + str(RATE) + '.txt')
             # del test_iter, train_iter, valida_iter
             generate_png(net, gt, device, test_iter, total_indices, FLAG, map_all=Map_All)
+
+end = time.time()
+print("程序运行时间：%.2f秒" % (end - start))

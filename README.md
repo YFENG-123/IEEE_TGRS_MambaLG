@@ -1,27 +1,52 @@
 # #YFENG
 # QuickStart
 
-## 安装cuda
-- wget https://developer.download.nvidia.com/compute/cuda/12.8.1/local_installers/cuda_12.8.1_570.124.06_linux.run
-- sudo sh cuda_12.8.1_570.124.06_linux.run
+### 安装cuda
+``` 
+wget https://developer.download.nvidia.com/compute/cuda/12.8.1/local_installers/cuda_12.8.1_570.124.06_linux.run
+sudo sh cuda_12.8.1_570.124.06_linux.run
+```
 
-## 配置cuda环境变量
-- vim /etc/profile
+### 配置cuda环境变量
+```
+vim /etc/profile
+```
+
+文末添加
+```
 export PATH=/usr/local/cuda-12.8/bin:$PATH
 export LD_LIBRARY_PATH=/usr/local/cuda-12.8/lib64:$LD_LIBRARY_PATH
-- source /etc/profile
+```
 
-## 创建conda环境（pytorch）
-- conda create -n venv python=3.12
-- conda activate venv
+### 激活cuda环境变量###
 
-## 安装mamba
-- wget https://github.com/state-spaces/mamba/releases/download/v2.2.6.post3/mamba_ssm-2.2.6.post3+cu12torch2.7cxx11abiTRUE-cp312-cp312-linux_x86_64.whl
-- pip install -r requirements.txt
+```
+source /etc/profile
+```
 
-## 启动
-- python main.py
+### 创建conda环境
+```
+conda create -n venv python=3.12
+```
 
+### 激活conda环境###
+```
+conda activate venv
+```
+
+### 安装mamba
+```
+wget https://github.com/state-spaces/mamba/releases/download/v2.2.6.post3/mamba_ssm-2.2.6.post3+cu12torch2.7cxx11abiTRUE-cp312-cp312-linux_x86_64.whl
+pip install ./mamba_ssm-2.2.6.post3+cu12torch2.7cxx11abiTRUE-cp312-cp312-linux_x86_64.whl
+```
+### 安装其他Python库
+```
+pip install -r requirements.txt
+```
+### 启动###
+```
+python main.py
+```
 
 # [Hyperspectral Image Classification with Mamba](https://ieeexplore.ieee.org/document/10812905)
 

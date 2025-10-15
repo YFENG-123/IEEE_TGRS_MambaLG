@@ -1,3 +1,6 @@
+classification_maps/
+net/
+records/
 __pycache__/
 /*.whl
 /*.run
