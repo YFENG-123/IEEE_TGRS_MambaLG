@@ -16,7 +16,7 @@ export https_proxy=http://127.0.0.1:22307
 ### pip添加清华源
 ```
 -i https://pypi.tuna.tsinghua.edu.cn/simple
-.```
+```
 
 ### Terminal更新apt，并安装libxml2
 ```
