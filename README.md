@@ -18,6 +18,13 @@ export https_proxy=http://127.0.0.1:22307
 -i https://pypi.tuna.tsinghua.edu.cn/simple
 .```
 
+### Terminal更新apt，并安装libxml2
+```
+sudo apt update
+sudo apt upgrade
+sudp apt install libxml2
+```
+
 ### 安装cuda
 ``` 
 wget https://developer.download.nvidia.com/compute/cuda/12.8.1/local_installers/cuda_12.8.1_570.124.06_linux.run
