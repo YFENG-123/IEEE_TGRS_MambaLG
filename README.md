@@ -25,6 +25,12 @@ sudo apt upgrade
 sudp apt install libxml2
 ```
 
+### Git全局设置
+```
+git config --global user.name "Your Name"
+git config --global user.email "your.email@example.com"
+```
+
 ### 安装cuda
 ``` 
 wget https://developer.download.nvidia.com/compute/cuda/12.8.1/local_installers/cuda_12.8.1_570.124.06_linux.run
